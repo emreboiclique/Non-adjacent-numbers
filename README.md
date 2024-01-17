@@ -1,0 +1,2 @@
+The question is "Given a list of integers, write a function that returns the largest sum of non-adjacent numbers. Numbers can be 0 or negative." For example, [2, 4, 6, 2, 5] should return 13, since we pick 2, 6, and 5. [5, 1, 1, 5] should return 10, since we pick 5 and 5.
+and I solved it by creating an array called "specialnumbers" and created a loop which steps 2 steps every time from the original array and if the next element is a special number we prefer the special number
