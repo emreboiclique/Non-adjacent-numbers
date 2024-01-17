@@ -41,7 +41,8 @@ for(int k=0;k<=arrsize;k++){
     //we should check if the number where 3 steps away is a special or not (if not we will prefer the number else we'll prefer the special one)
     for(int l=0;l<index;l++)if(arr[i+1]==specialnumbers[l])specialfinder=true;
     if(specialfinder){i++;}
-    result+=arr[i];
+    if(arr[i]>=0)result+=arr[i];
+    else{i++;}
     specialfinder=false;        }
 if(result>largestresult)largestresult=result;
 }
